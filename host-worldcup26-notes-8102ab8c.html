@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世界杯 2026 – 产品说明 · host-worldcup26.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #f4f7fa;
+            color: #1e2a35;
+            line-height: 1.7;
+        }
+        .hero {
+            background: linear-gradient(145deg, #0b1a2a 0%, #1a2f3f 100%);
+            color: #e8edf4;
+            padding: 4.5rem 2rem 3.8rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30px;
+            left: -10%;
+            width: 120%;
+            height: 70px;
+            background: #f4f7fa;
+            border-radius: 50% 50% 0 0;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: #dce7f5;
+            margin-bottom: 1rem;
+        }
+        .hero .sub {
+            font-size: 1.2rem;
+            color: #a3bdd4;
+            max-width: 640px;
+            margin: 0 auto 1.4rem;
+        }
+        .hero .tagline {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(4px);
+            padding: 0.4rem 1.6rem;
+            border-radius: 40px;
+            font-size: 0.95rem;
+            color: #bdd4e8;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 1.2rem 1.8rem 4rem;
+        }
+        .intro-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: -1rem;
+        }
+        .intro-text {
+            flex: 2;
+            min-width: 280px;
+        }
+        .intro-text h2 {
+            font-size: 1.7rem;
+            font-weight: 450;
+            border-left: 5px solid #2b6f9e;
+            padding-left: 1rem;
+            margin: 1.5rem 0 0.8rem;
+            color: #0d2b41;
+        }
+        .intro-text p {
+            margin: 0.9rem 0;
+            color: #2a3f4f;
+        }
+        .intro-text a {
+            color: #1b6b9a;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border 0.2s;
+        }
+        .intro-text a:hover {
+            border-bottom-color: #1b6b9a;
+        }
+        .highlight-box {
+            flex: 1.2;
+            min-width: 230px;
+            background: white;
+            border-radius: 20px;
+            padding: 1.8rem 1.6rem;
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.04);
+            border: 1px solid #e2ebf3;
+            align-self: flex-start;
+            margin-top: 1.2rem;
+        }
+        .highlight-box h3 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #0d2b41;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .highlight-box ul {
+            list-style: none;
+        }
+        .highlight-box li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #ecf2f8;
+            display: flex;
+            gap: 10px;
+        }
+        .highlight-box li:last-child {
+            border-bottom: none;
+        }
+        .highlight-box .icon {
+            color: #2b6f9e;
+            font-weight: 400;
+            display: inline-block;
+            min-width: 22px;
+        }
+        .card-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 1.8rem;
+            margin: 2.8rem 0 2rem;
+        }
+        .card {
+            background: white;
+            border-radius: 24px;
+            padding: 1.8rem 1.4rem 1.6rem;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.02);
+            border: 1px solid #e4edf5;
+            transition: transform 0.15s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+        }
+        .card .emoji {
+            font-size: 2.2rem;
+            margin-bottom: 0.2rem;
+            display: block;
+        }
+        .card h4 {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: #0d2b41;
+            margin: 0.4rem 0 0.5rem;
+        }
+        .card p {
+            font-size: 0.95rem;
+            color: #345162;
+        }
+        .faq-mini {
+            background: #e9f0f7;
+            border-radius: 28px;
+            padding: 2rem 2.2rem;
+            margin: 2.2rem 0 1.8rem;
+        }
+        .faq-mini h3 {
+            font-size: 1.4rem;
+            font-weight: 480;
+            color: #0d2b41;
+            margin-bottom: 1.2rem;
+        }
+        .faq-item {
+            margin: 0.8rem 0;
+        }
+        .faq-item strong {
+            display: block;
+            font-weight: 500;
+            color: #1a4057;
+            margin-bottom: 0.15rem;
+        }
+        .faq-item p {
+            margin: 0.1rem 0 0.6rem;
+            color: #2f4a5d;
+            font-size: 0.95rem;
+        }
+        .note {
+            font-size: 0.9rem;
+            color: #4f6679;
+            background: #ffffffc0;
+            padding: 1rem 1.6rem;
+            border-radius: 40px;
+            border: 1px solid #d7e2ed;
+            margin-top: 2.2rem;
+            text-align: center;
+            backdrop-filter: blur(2px);
+        }
+        .note a {
+            color: #1b6b9a;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 1.8rem 3rem;
+            color: #526c7d;
+            font-size: 0.85rem;
+            border-top: 1px solid #dce6f0;
+            margin-top: 1.6rem;
+        }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+            .hero .sub { font-size: 1rem; }
+            .container { padding: 1rem 1.2rem 3rem; }
+            .highlight-box { margin-top: 0; }
+            .faq-mini { padding: 1.4rem 1.2rem; }
+            .card-section { gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>⚽ 世界杯 · 产品说明</h1>
+        <p class="sub">快速确认 host-worldcup26.com 的用途、核心特点与适用场景</p>
+        <span class="tagline">2026 年 · 信息型站点</span>
+    </section>
+
+    <div class="container">
+        <div class="intro-grid">
+            <div class="intro-text">
+                <h2>一眼识别网站用途</h2>
+                <p>打开这个页面，您可能正在判断 <strong>host-worldcup26.com</strong> 是否提供您需要的内容。简单来说：该站点围绕 <a href="https://host-worldcup26.com">世界杯</a> 赛事与相关资讯，以清晰的产品化方式呈现摘要、亮点与使用建议。它并非官方售票或直播平台，而是帮助球迷、媒体工作者和赞助商快速理解赛事结构、候选城市及时间线。</p>
+                <p>您可以把它看作一个<strong>轻量级的产品说明书</strong>：从赛程框架到参赛队伍资格，从场馆分布到旅行提示，信息经过筛选整理，便于快速定位关键事实。</p>
+            </div>
+            <div class="highlight-box">
+                <h3><span class="icon">📌</span> 核心亮点</h3>
+                <ul>
+                    <li><span class="icon">🏟️</span> 16 个候选场馆 · 三国联合</li>
+                    <li><span class="icon">📅</span> 2026 年 6 月 – 7 月</li>
+                    <li><span class="icon">🌍</span> 48 支参赛队 · 全新赛制</li>
+                    <li><span class="icon">📋</span> 城市指南 & 签证提示</li>
+                    <li><span class="icon">🔍</span> 无广告 · 克制陈列</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card-section">
+            <div class="card">
+                <span class="emoji">🗺️</span>
+                <h4>场景举例</h4>
+                <p>计划前往美国、加拿大或墨西哥观赛，需要快速对比各主办城市的特点、交通与住宿概况。</p>
+            </div>
+            <div class="card">
+                <span class="emoji">📊</span>
+                <h4>使用建议</h4>
+                <p>先阅读「赛事概览」部分，再根据兴趣查看具体城市或球队页面，信息密度适中，适合碎片化浏览。</p>
+            </div>
+            <div class="card">
+                <span class="emoji">⚖️</span>
+                <h4>可信说明</h4>
+                <p>本站引用公开数据与官方公告，不提供购票链接或预测博彩内容，所有推荐均基于客观事实整理。</p>
+            </div>
+        </div>
+
+        <div class="faq-mini">
+            <h3>❓ 常见问题摘要</h3>
+            <div class="faq-item">
+                <strong>这个网站是官方世界杯网站吗？</strong>
+                <p>不是。host-worldcup26.com 是非官方信息整理站点，与 FIFA 无附属关系。内容基于公开资料汇编，旨在为访问者提供结构化参考。</p>
+            </div>
+            <div class="faq-item">
+                <strong>我可以在这里买到比赛门票吗？</strong>
+                <p>不能。本站不处理任何票务交易。页面会引导至 FIFA 官方票务入口（如有），但不含直接购票链接。</p>
+            </div>
+            <div class="faq-item">
+                <strong>信息更新频率如何？</strong>
+                <p>随着官方公告更新，主要页面保持季度性刷新。重大变化（如场馆变更、赛程调整）会尽快同步。</p>
+            </div>
+        </div>
+
+        <div class="note">
+            ⚽ 本页面是 host-worldcup26.com 的产品介绍页。若您想直接浏览关于 <a href="https://host-worldcup26.com">世界杯</a> 的完整信息，请点击链接进入主站。
+        </div>
+    </div>
+
+    <footer>
+        <p>基于公开信息整理 · 仅供内容说明参考</p>
+        <p style="margin-top: 0.3rem;">host-worldcup26.com – 非官方世界杯资讯站</p>
+    </footer>
+</body>
+</html>
